@@ -25,4 +25,4 @@ test:
 
 production:
   <<: *default
-  database: joinshift
+  database: postgresql-graceful-15349
