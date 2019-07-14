@@ -1,0 +1,129 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .title
+ {
+     font-weight: bold;
+     color: navy;
+ }
+ 
+ .title-container
+ {
+  margin-top: 6em;
+  margin-bottom: 1em;
+ }
+ 
+ .detail-container
+ {
+  margin-bottom: 2em;
+ }
+ 
+ .detail
+ {
+     color: #404040;
+ }
+ 
+ .perspective-detail
+ {
+     color: #404040;
+     font-size: smaller;
+     font-weight: bold;
+ }
+ 
+ .question
+ {
+     font-weight: bold;
+     color: #404040;
+ }
+ 
+ .question-container
+ {
+     text-align: center
+ }
+ 
+ .Disagree
+ {
+     color: red;
+     font-size: smaller;
+ }
+ 
+ .Agree
+ {
+     color:green;
+     font-size: smaller;
+ }
+ 
+ .large-radio-buttons
+ {
+     width: 2.8em;
+     height: 2.8em;
+ }
+ 
+ .questions-list
+ {
+     width:80%;
+     margin-right:10%;
+     margin-left: 10%;
+ }
+ 
+ .email
+ {
+     padding:2em;
+     margin-top: 2em;
+     margin-bottom: 2em;
+ }
+ 
+ .save-button
+ {
+     text-align: center;
+     padding:2em;
+ }
+ 
+ .perspective-result-container
+ {
+     margin:3em;
+     padding:3em;
+ }
+ 
+ .dimension-title
+ {
+     font-size: smaller;
+     color: gray;
+ }
+ 
+ .results-margin
+ {
+       margin-top:1em;
+ }
+ 
+ .results-title-container
+ {
+  height: 100%;
+ }
+ 
+ .bg-grey
+ {
+  background-color:Gainsboro !important;
+ }
+ 
+ .bg-purple
+ {
+  background-color:purple !important;
+ }
+ 
+ .alert-hidden
+ {
+  display: none;
+ }

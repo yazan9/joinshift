@@ -1,0 +1,15 @@
+<li class="list-group-item">
+    <div class="question">
+        <%=question.text%>
+    </div>
+<br>
+<span class="Disagree">Disagree</span>
+<% n=1 %>
+<%while n<8 %>
+<label class="radio-inline large-radio-buttons">
+    <%= radio_button_tag("question"+question.sequence.to_s, n.to_s) %>
+</label>
+<%n+=1%>
+<%end%>
+<span class="Agree">Agree</span>
+</li>

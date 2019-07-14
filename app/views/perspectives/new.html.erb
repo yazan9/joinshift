@@ -1,0 +1,30 @@
+<div class="title-container"><div class="title">Discover Your Perspective</div></div>
+<div class="detail-container"><div class="detail">Complete the 7 min test and get a detailed report of your lenses of the world.</div></div>
+<div class="alert alert-danger alert-hidden" role="alert" id="error">
+  Please provide an answer to all the questions below
+</div>
+<% if flash[:alert] %>
+    <div class="alert alert-danger"><%= flash[:alert] %></div>
+<% end %>
+<div class="">
+<div class="questions-list">
+<%=form_tag(controller: "perspectives", action: "create", method: "post") do%>
+<ul class="list-group question-container">
+<% @Questions.each do |question| %>
+  <%= render partial: 'perspectives/question', locals: { question: question } %>
+<% end %>
+<li class="list-group-item">
+    <div class="question">
+    Your Email
+    </div>
+    <div class="form-group">
+    <input type="email" class="form-control email" id="user_email" name="user_email" aria-describedby="emailHelp" placeholder="you@example.com" required>
+  </div>
+</li>
+</ul>
+<div class="save-button">
+    <%= submit_tag 'Save & Continue', :class => "btn btn-primary", :onclick => "return validateForm();"%>
+</div>
+<%end%>
+</div>
+</div>
