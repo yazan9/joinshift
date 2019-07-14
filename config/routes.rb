@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   get 'perspectives/new'
   post 'perspectives/create'
   get 'perspectives/results'
+  get 'perspectives/all'
+  
+  root 'perspectives#new'
 end

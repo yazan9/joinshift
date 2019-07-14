@@ -7,6 +7,10 @@ class PerspectivesController < ApplicationController
         @Perspective = Perspective.new
     end
     
+    def all
+        @Perspectives = Perspective.all
+    end
+    
     def create
         #@Perspective = Perspective.new(perspective_params)
         @answers = "";
