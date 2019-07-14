@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20190714053522) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "perspectives", force: :cascade do |t|
     t.string   "email",      null: false
     t.string   "answers",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_perspectives_on_email", unique: true
+    t.index ["email"], name: "index_perspectives_on_email", unique: true, using: :btree
   end
 
   create_table "questions", force: :cascade do |t|
