@@ -3,10 +3,20 @@ class DimensionsCalculator
     
     
     def initialize
-        @EI = Dimension.new("EI");
-        @SN = Dimension.new("SN");
-        @TF = Dimension.new("TF");
-        @JP = Dimension.new("JP"); 
+        @EI = Dimension.new("EI", "Extraversion (E)", "Introversion (I)", false);
+        @SN = Dimension.new("SN", "Sensing (S)", "Intuition (N)", true);
+        @TF = Dimension.new("TF", "Thinking (T)", "Feeling (F)", true);
+        @JP = Dimension.new("JP", "Judging (J)", "Perceiving (P)", true); 
+    end
+    
+    def getDimensions
+        @AllDimensions = Array.new
+        @AllDimensions << @EI
+        @AllDimensions << @SN
+        @AllDimensions << @TF
+        @AllDimensions << @JP
+
+        return @AllDimensions
     end
     
     def calculate(answers)
